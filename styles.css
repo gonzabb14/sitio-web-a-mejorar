@@ -1,19 +1,53 @@
+:root {
+  --white: #ffffff;
+  --btnColor: #d4d4d4;
+  --aceituna: #a1ac88;
+  --gris: #757575;
+  --azul: #464d70;
+  --negro: #000000;
+}
 body {
-    background-color: rgb(255, 255, 165);
+  background-color: var(--white);
+  font-family: "Poppins", sans-serif;
 }
 
-.image{
-    border: 5px solid green;
-    border-radius: 10px;
-    height: 400px;
+h1,
+h2 {
+  text-align: center;
+  color: var(--azul);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  border: 5px solid var(--azul);
+  border-radius: 10px;
+  height: 400px;
 }
 
 .link-button {
-    text-decoration: none;
-    color: black;
-    border: 1px solid gray;
-    background-color: #f2f2f2;
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 2px 3px #888888;
+  text-decoration: none;
+  color: var(--negro);
+  border: 1px solid gray;
+  background-color: var(--btnColor);
+
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 3px #888888;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: end;
 }
